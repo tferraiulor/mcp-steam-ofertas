@@ -1,0 +1,39 @@
+{
+  "name": "oferta-steam",
+  "version": "1.0.0",
+  "description": "Servidor MCP para encontrar y notificar nuevos lanzamientos relevantes y buenas ofertas en Steam, cruzando con la biblioteca local D:\\games\\steam y enviando alertas a Discord.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "oferta-steam": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "npm run build && node scripts/smoke-test.mjs",
+    "inspect": "npm run build && npx @modelcontextprotocol/inspector node dist/index.js",
+    "bot": "node scripts/bot-discord.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "steam",
+    "ofertas",
+    "discord",
+    "opencode"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

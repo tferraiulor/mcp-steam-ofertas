@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "oferta-steam": {
+      "type": "local",
+      "command": [
+        "node",
+        "./dist/index.js"
+      ],
+      "enabled": true,
+      "timeout": 30000
+    }
+  }
+}

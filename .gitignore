@@ -1,0 +1,11 @@
+# Seguridad: NUNCA subir credenciales ni tokens de Discord
+.env
+*.env.local
+
+# Dependencias pesadas (se instalan con npm install o vienen en el .zip de releases)
+node_modules/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.bak
